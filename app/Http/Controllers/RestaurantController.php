@@ -56,6 +56,7 @@ class RestaurantController extends Controller
             }
 
             $restaurant->products;
+            $restaurant->user;
             $restaurant->total_orders = $restaurant->orders()->count();
             return response([
                 'status' => 1,
